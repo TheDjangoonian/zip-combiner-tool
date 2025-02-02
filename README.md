@@ -1,1 +1,1 @@
-Add missing files from ZIP B to ZIP A.
+Add missing files from ZIP B, C, and so on to ZIP A.

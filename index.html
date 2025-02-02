@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIP File Merger</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h2>ZIP File Merger</h2>
+    <label for="zipCount">Number of ZIP Files (2-26): </label>
+    <input type="number" id="zipCount" min="2" max="26" value="2" onchange="updateFileInputs()">
+    <div id="fileInputs">
+        <input type="file" id="zipA" accept=".zip">
+        <input type="file" id="zipB" accept=".zip">
+    </div>
+    <button onclick="mergeZipFiles()">Merge</button>
+    <a id="downloadLink" style="display:none">Download Merged ZIP</a>
+</body>
+</html>
